@@ -1,5 +1,5 @@
 
-// Adafruit PM 2.5 sensor to 3 LEDs, by Kevin Walker
+// Adafruit PM 2.5 sensor to 3 LEDs and piezo speaker, by Kevin Walker
 
 #include "Adafruit_PM25AQI.h"
 #include <SoftwareSerial.h>
