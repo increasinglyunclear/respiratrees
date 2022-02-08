@@ -1,12 +1,13 @@
 
 // Adafruit PM 2.5 sensor to RGB LED and piezo speaker, by Kevin Walker
+// Sound in this version is like a Geiger counter, using a delay based on the reading, instead of translating the reading straight into a frequency.
 
 #include "Adafruit_PM25AQI.h"
 #include <SoftwareSerial.h>
 SoftwareSerial pmSerial(2, 3);
 Adafruit_PM25AQI aqi = Adafruit_PM25AQI();
 
-//TIMER FOR SOUND
+//TIMER TO REPLACE THE DELAY IN READING
 unsigned long lastTime = millis();
 
 unsigned long reading = 0;
